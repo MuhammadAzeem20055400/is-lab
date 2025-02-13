@@ -28,7 +28,7 @@
 <h2>Exercise NO. 2</h2>
 <p> Enter a Number </p>
 <input type="number" id="n">
-<button onclick="num()">press me!</button>
+<button onclick="num()">press button!</button>
 
 <script>
     function num() {
@@ -47,7 +47,40 @@
     }
 </script>
 
+<br>
+<h2>Exercise NO. 3</h2>
+<p> Enter a Number A </p>
+<input type="number" id="x">
+<p> Enter a Number B </p>
+<input type="number" id="y">
+<p> Enter a Number N </p>
+<input type="number" id="z">
+<button onclick="check()">press button!</button>
 
+<script>
+    function check() {
+        let x=document.getElementById('x').value;
+        let y=document.getElementById('y').value; 
+        let z=document.getElementById('z').value;
+
+        x=parseInt(x);
+        y=parseInt(y);
+        z=parseInt(z);
+
+        let finalresult=0;
+
+        for (let i = 0; i <z; i++) {
+            if (i%x ===0 || i%y===0) {
+               finalresult+=0; 
+            }
+            
+        }
+        alert( +finalresult);
+
+
+    }
+
+</script>
 
 
 </body>
